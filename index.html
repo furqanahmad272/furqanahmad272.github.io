@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furqan Ahmad - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        .job, .school, .project {
+            margin-bottom: 20px;
+        }
+        .job-header, .school-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .date {
+            color: #777;
+            font-style: italic;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #e1ecf4;
+            color: #2c3e50;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .job-header, .school-header {
+                flex-direction: column;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Furqan Ahmad</h1>
+        <p>Computer Science Postgraduate & Researcher</p>
+        <div class="contact-info">
+            Toba Tek Singh, Pakistan | 
+            <a href="mailto:furqanahmad272@gmail.com">furqanahmad272@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/furqanahmad272">LinkedIn</a> |
+            <a href="https://github.com/furqanahmad272">GitHub</a>
+        </div>
+    </header>
+
+    <section id="summary">
+        <h2>About Me</h2>
+        <p>A dedicated Computer Science postgraduate with over three years of academic and industry experience. Skilled in multi-agent systems, edge computing, and simulation-based research, with a focus on human-centered and scalable AI applications. Proactive, analytical, and motivated to pursue impactful research bridging theory and real-world innovation.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span>Computer Science Lecturer | Superior College University</span>
+                <span class="date">Oct 2022 - Current</span>
+            </div>
+            <ul>
+                <li>Design, prepare, and deliver lectures, tutorials, and practical sessions across core areas of Computer Science (programming, algorithms, software engineering, databases, AI, networking).</li>
+                <li>Supervise undergraduate projects, providing guidance in research methods, technical writing, and innovation.</li>
+                <li>Mentor and advise students on academic progress and career development.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Officer IT / Networks | Al Nasr Textiles Ltd.</span>
+                <span class="date">Aug 2019 - Sep 2021</span>
+            </div>
+            <ul>
+                <li>Implemented and managed network security protocols, firewalls, and access controls.</li>
+                <li>Administered servers, databases, and cloud services ensuring integration with network systems.</li>
+                <li>Performed system backups, disaster recovery planning, and IT infrastructure maintenance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        
+        <div class="school">
+            <div class="school-header">
+                <span>MS in Computer Science | National Textile University, Faisalabad</span>
+                <span class="date">2020 - 2022</span>
+            </div>
+            <p><strong>CGPA:</strong> 3.35/4.00<br>
+            <strong>Thesis:</strong> Detection of Distributed Denial-of-Service (DDoS) Attacks in Software Defined Networks.</p>
+        </div>
+
+        <div class="school">
+            <div class="school-header">
+                <span>BS in Computer Science | University of Agriculture Faisalabad</span>
+                <span class="date">2016 - 2020</span>
+            </div>
+            <p><strong>CGPA:</strong> 3.44/4.00<br>
+            <strong>Thesis:</strong> Design and Assessment of a User-Friendly Interface for an Online Ecommerce Platform.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">SDN/OpenFlow</span>
+            <span class="skill-tag">Artificial Intelligence</span>
+            <span class="skill-tag">OMNET++</span>
+            <span class="skill-tag">NS-3</span>
+            <span class="skill-tag">NetSim</span>
+            <span class="skill-tag">Mininet</span>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+            <li><strong>Context Aware Software Defined AIoT Orchestrator for Smart Health Wearables</strong> - China Biomedical Engineering Conference & Medical Innovation Summit (2025).</li>
+            <li><strong>Detection and Mitigation of Malicious DDoS Floods in Software Defined Networks</strong> - Journal of Electrical Electronics Engineering (2023).</li>
+            <li><strong>Programmable Context-Aware Orchestration of Collaborative Inference Using Software-Defined AIoT</strong> - 20th International Conference on Green, Pervasive, and Cloud Computing (2025).</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Research Projects</h2>
+        <div class="project">
+            <strong>Energy-Efficient Edge-Assisted V2X for Smart Cities (2024-2025)</strong>
+            <p>Investigated the integration of mobile edge computing (MEC) with V2X networks to support real-time applications like accident prevention and congestion management.</p>
+        </div>
+        <div class="project">
+            <strong>Low-Light Image Enhancement for Vehicular Vision (2024-2025)</strong>
+            <p>Designed a deep learning-based low-light image enhancement framework tailored for vehicular vision systems.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Cloud Practitioner - Udemy (2021-2022)</li>
+            <li>CISCO CCNA Training - Udemy (2022)</li>
+            <li>Data Analytics and Business Intelligence - DigiSkills (2022-2023)</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
