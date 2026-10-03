@@ -33,11 +33,10 @@
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
-        /* NEW: Styles for the profile picture */
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Makes it circular */
+            border-radius: 50%;
             object-fit: cover;
             border: 5px solid white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -95,6 +94,35 @@
             border-radius: 4px;
             font-size: 0.9em;
         }
+        .pub-status {
+            display: inline-block;
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-size: 0.72em;
+            font-weight: bold;
+            margin-left: 6px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .status-submitted { background: #fcf3cf; color: #8a6d1a; }
+        .status-review { background: #fdebd0; color: #a04000; }
+        .status-accepted { background: #d5f5e3; color: #1e8449; }
+        .status-poster { background: #e8daef; color: #6c3483; }
+        .status-published { background: #d6eaf8; color: #1a5276; }
+        .pub-venue {
+            color: #555;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        .pub-authors {
+            color: #777;
+            font-size: 0.85em;
+        }
+        .cert-desc {
+            color: #666;
+            font-size: 0.9em;
+        }
         @media (max-width: 600px) {
             .job-header, .school-header {
                 flex-direction: column;
@@ -110,12 +138,13 @@
 <div class="container">
     <header>
         <img src="furqan.jpg" alt="Furqan Ahmad" class="profile-img">
-        
+
         <h1>Furqan Ahmad</h1>
-        <p>Computer Science Postgraduate & Researcher</p>
+        <p>AI Engineer & Computer Science Researcher</p>
         <div class="contact-info">
-            Toba Tek Singh, Pakistan | 
-            <a href="mailto:furqanahmad272@gmail.com">furqanahmad272@gmail.com</a> | 
+            Toba Tek Singh, Pakistan |
+            <a href="tel:+923359797319">+92 335 9797319</a> |
+            <a href="mailto:furqanahmad272@gmail.com">furqanahmad272@gmail.com</a> |
             <a href="https://www.linkedin.com/in/furqanahmad272">LinkedIn</a> |
             <a href="https://github.com/furqanahmad272">GitHub</a>
         </div>
@@ -123,40 +152,52 @@
 
     <section id="summary">
         <h2>About Me</h2>
-        <p>A dedicated Computer Science postgraduate with over three years of academic and industry experience. Skilled in multi-agent systems, edge computing, and simulation-based research, with a focus on human-centered and scalable AI applications. Proactive, analytical, and motivated to pursue impactful research bridging theory and real-world innovation.</p>
+        <p>A dedicated Computer Science postgraduate with over three years of academic and industry experience. Skilled in software-defined systems, edge computing, and their integration for human-centred, scalable smart healthcare. Proactive, analytical, and motivated to pursue impactful research, bridging theory and real-world innovation.</p>
     </section>
 
     <section id="experience">
         <h2>Work Experience</h2>
-        
+
         <div class="job">
             <div class="job-header">
-                <span>Computer Science Lecturer | Superior College University</span>
-                <span class="date">Oct 2022 - Current</span>
+                <span>AI Engineer | Sagacitech Systems (Pvt.) Ltd., Lahore</span>
+                <span class="date">Jan 2025 - Current</span>
             </div>
             <ul>
-                <li>Design, prepare, and deliver lectures, tutorials, and practical sessions across core areas of Computer Science (programming, algorithms, software engineering, databases, AI, networking).</li>
-                <li>Supervise undergraduate projects, providing guidance in research methods, technical writing, and innovation.</li>
-                <li>Mentor and advise students on academic progress and career development.</li>
+                <li>End-to-end development of scalable AI solutions, integrating iterative feedback loops to ensure transparency.</li>
+                <li>Collaborate with UX/UI designers to architect and deploy machine learning models that prioritize user intent.</li>
             </ul>
         </div>
 
         <div class="job">
             <div class="job-header">
-                <span>Officer IT / Networks | Al Nasr Textiles Ltd.</span>
+                <span>Computer Science Lecturer | Superior College University, Toba Tek Singh</span>
+                <span class="date">Oct 2022 - Dec 2024</span>
+            </div>
+            <ul>
+                <li>Design, prepare, and deliver lectures, tutorials, and practical sessions across core areas of Computer Science (programming, algorithms, software engineering, databases, AI, networking).</li>
+                <li>Supervise undergraduate projects, providing guidance in research methods, technical writing, and innovation.</li>
+                <li>Mentor and advise students on academic progress, career development, and research opportunities.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Officer IT / Networks | Al Nasr Textiles Ltd., Lahore</span>
                 <span class="date">Aug 2019 - Sep 2021</span>
             </div>
             <ul>
-                <li>Implemented and managed network security protocols, firewalls, and access controls.</li>
-                <li>Administered servers, databases, and cloud services ensuring integration with network systems.</li>
-                <li>Performed system backups, disaster recovery planning, and IT infrastructure maintenance.</li>
+                <li>Implemented and managed network security protocols, firewalls, and access controls to protect against threats.</li>
+                <li>Administered servers, databases, and cloud services, ensuring smooth integration with network systems.</li>
+                <li>Performed system backups, disaster recovery planning, and regular maintenance of IT infrastructure.</li>
+                <li>Ensured compliance with IT policies, data protection, and cybersecurity standards.</li>
             </ul>
         </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        
+
         <div class="school">
             <div class="school-header">
                 <span>MS in Computer Science | National Textile University, Faisalabad</span>
@@ -174,52 +215,111 @@
             <p><strong>CGPA:</strong> 3.44/4.00<br>
             <strong>Thesis:</strong> Design and Assessment of a User-Friendly Interface for an Online Ecommerce Platform.</p>
         </div>
+
+        <div class="school">
+            <div class="school-header">
+                <span>Higher Secondary School Education (Pre-Engineering) | Punjab Group of Colleges, Toba Tek Singh</span>
+                <span class="date">2014 - 2016</span>
+            </div>
+        </div>
+
+        <div class="school">
+            <div class="school-header">
+                <span>Secondary School Education (Science) | Govt. Model High School, Toba Tek Singh</span>
+                <span class="date">2011 - 2013</span>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">SDN/OpenFlow</span>
-            <span class="skill-tag">Artificial Intelligence</span>
-            <span class="skill-tag">OMNET++</span>
+            <span class="skill-tag">C++ Programming</span>
+            <span class="skill-tag">Python Programming</span>
+            <span class="skill-tag">MATLAB Simulations</span>
+            <span class="skill-tag">Network Simulation Tools</span>
+            <span class="skill-tag">OMNeT++</span>
             <span class="skill-tag">NS-3</span>
             <span class="skill-tag">NetSim</span>
-            <span class="skill-tag">Mininet</span>
         </div>
     </section>
 
     <section id="publications">
         <h2>Selected Publications</h2>
         <ul>
-            <li><strong>Context Aware Software Defined AIoT Orchestrator for Smart Health Wearables</strong> - China Biomedical Engineering Conference & Medical Innovation Summit (2025).</li>
-            <li><strong>Detection and Mitigation of Malicious DDoS Floods in Software Defined Networks</strong> - Journal of Electrical Electronics Engineering (2023).</li>
-            <li><strong>Programmable Context-Aware Orchestration of Collaborative Inference Using Software-Defined AIoT</strong> - 20th International Conference on Green, Pervasive, and Cloud Computing (2025).</li>
+            <li><strong>Software-Defined Artificial Intelligence of Things in Mobile Healthcare: A Survey</strong><span class="pub-status status-review">Under Review</span><br>
+                <span class="pub-venue">ACM Computing Surveys, 2026</span><br>
+                <span class="pub-authors">F. Ahmad, Y. Zhang, K. Kiran, B. Yang, B. Guo, Z. Yu, H. Yang, C. Yuen</span></li>
+            <li><strong>Enabling Robust and Secure Touch-to-Access Pairing via Dynamic Dual-Channel Exchange</strong><span class="pub-status status-submitted">Submitted</span><br>
+                <span class="pub-venue">Pervasive Computing Conference, 2026 (China Computing Federation)</span><br>
+                <span class="pub-authors">B. Zhakas, Y. Zhang, A. Pyrkova, F. Ahmad</span></li>
+            <li><strong>LDDS-1D-ResNet: Edge-Deployable 1D CNN for Wearable Breast Cancer Detection via Thermal Sensing</strong><span class="pub-status status-poster">Poster</span><span class="pub-status status-submitted">Submitted</span><br>
+                <span class="pub-venue">UbiComp, 2026 (ACM)</span><br>
+                <span class="pub-authors">K. Kiran, Y. Zhang, F. Ahmad, F. Wang, B. Matkerim, J. Yang, Z. Song</span></li>
+            <li><strong>Programmable Context-Aware Orchestration of Collaborative Inference Using Software-Defined AIoT in Personal Healthcare Wearables</strong><span class="pub-status status-accepted">Accepted</span><br>
+                <span class="pub-venue">20th International Conference on Green, Pervasive, and Cloud Computing (GPC 2025), Springer Nature</span><br>
+                <span class="pub-authors">F. Ahmad, Y. Zhang, K. Kiran, B. Guo, H. Yang</span></li>
+            <li><strong>Context Aware Software Defined AIoT Orchestrator for Smart Health Wearables</strong><span class="pub-status status-poster">Poster Presented</span><br>
+                <span class="pub-venue">China Biomedical Engineering Conference & Medical Innovation Summit, 2025</span><br>
+                <span class="pub-authors">F. Ahmad, Y. Zhang, K. Kiran, X. Zhang</span></li>
+            <li><strong>Detection and Mitigation of Malicious DDoS Floods in Software Defined Networks</strong><span class="pub-status status-published">Published</span><br>
+                <span class="pub-venue">Journal of Electrical Electronics Engineering, 2(2), 120-129, 2023</span><br>
+                <span class="pub-authors">F. Ahmad, M. Saleem, U. ur Rehman</span></li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>Research Projects</h2>
         <div class="project">
-            <strong>Energy-Efficient Edge-Assisted V2X for Smart Cities (2024-2025)</strong>
-            <p>Investigated the integration of mobile edge computing (MEC) with V2X networks to support real-time applications like accident prevention and congestion management.</p>
+            <strong>Adaptive Task Offloading for Wearable Healthcare Monitoring (2024-2025)</strong>
+            <p>Built a Software-Defined AIoT framework where mobile health wearables dynamically decide whether to process data locally or offload to a nearby edge server.</p>
         </div>
         <div class="project">
-            <strong>Low-Light Image Enhancement for Vehicular Vision (2024-2025)</strong>
-            <p>Designed a deep learning-based low-light image enhancement framework tailored for vehicular vision systems.</p>
+            <strong>RGB-DINO-Gaze: Label-Efficient Gaze Estimation via Self-Supervised Learning (2025)</strong>
+            <p>Collaborated on a master's thesis project developing a novel gaze estimation framework that leverages self-supervised learning to dramatically reduce annotation requirements. <a href="https://github.com/syedaoonshah/RGB-DINO-Gaze">GitHub</a></p>
+        </div>
+        <div class="project">
+            <strong>Smart Eye Tracking System for Driver's Fatigue Detection (2026)</strong>
+            <p>Collaborated on a master's thesis research project building an advanced deep-learning-based eye-tracking system with intelligent glare compensation for robust detection of the pupil, iris, and corneal glint under challenging lighting conditions. <a href="https://github.com/syedaoonshah/SmartEyeTracking">GitHub</a></p>
         </div>
     </section>
 
     <section id="certifications">
         <h2>Certifications</h2>
         <ul>
-            <li>AWS Certified Cloud Practitioner - Udemy (2021-2022)</li>
-            <li>CISCO CCNA Training - Udemy (2022)</li>
-            <li>Data Analytics and Business Intelligence - DigiSkills (2022-2023)</li>
+            <li><strong>Data Analytics and Business Intelligence</strong> - DigiSkills (2023)<br>
+                <span class="cert-desc">Data handling, cleaning, and visualization using MS Excel, Power BI, Python, and R.</span></li>
+            <li><strong>AWS Certified Cloud Practitioner</strong> - Udemy (2022)<br>
+                <span class="cert-desc">Foundational AWS cloud concepts, architecture, security, and core services.</span></li>
+            <li><strong>Web Development</strong> - Career Institute, Faisalabad (2018)<br>
+                <span class="cert-desc">Full-stack web development with HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.</span></li>
         </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li><strong>Urdu</strong> - Mother Tongue</li>
+            <li><strong>English</strong> - B2 (Independent user: listening, reading, writing, spoken production, spoken interaction)</li>
+        </ul>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <div class="job">
+            <div class="job-header">
+                <span>Muhammad Asif</span>
+                <span class="date">Professor, National Textile University, Faisalabad</span>
+            </div>
+            <p><a href="mailto:muhammadasif17.edu@gmail.com">muhammadasif17.edu@gmail.com</a></p>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <span>Abdul Qayyum</span>
+                <span class="date">Assistant Professor, National Textile University, Faisalabad</span>
+            </div>
+            <p><a href="mailto:qayyum.ntu.edu@gmail.com">qayyum.ntu.edu@gmail.com</a></p>
+        </div>
     </section>
 
 </div>
